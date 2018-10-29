@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
+import { hot } from 'react-hot-loader';
 import 'babel-polyfill';
 import App from './App'
 

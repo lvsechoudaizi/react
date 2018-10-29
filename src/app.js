@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <div>
         <h1>{this.state.count}</h1>
-        <button onClick={() => this.add()} key={5}>增加1</button>
+        <button onClick={() => this.add()} key={7}>增加1</button>
       </div>
     );
   }
