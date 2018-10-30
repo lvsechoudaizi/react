@@ -1,0 +1,100 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  /*"parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },*/
+  "plugins": [
+    "prettier",
+    "import",
+    "jsx-a11y",
+    "react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "semi": false
+      }
+    ],
+    "react/button-has-type":0,
+    "react/no-access-state-in-setstate":0,
+    "react/no-unused-state": 0,
+    "react/jsx-indent": 0,
+    "no-console":0,
+    "jsx-a11y/click-events-have-key-events": 1,
+    "react/jsx-filename-extension": [
+      0,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "max-len": [
+      "error",
+      150
+    ],
+    // 取消必须提供默认export
+    "import/prefer-default-export": "off",
+    // 除了for循环里不得使用++ --
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "no-shadow": 1,
+    "object-curly-spacing": 0,
+    // 语句结尾分号非必须
+    "semi": "off",
+    // 要求使用一致的return
+    "consistent-return": "off",
+    // 启用拖尾逗号(同行时禁用)
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "function-paren-newline": 0,
+    // 关闭class的method必须使用this
+    "class-methods-use-this": 0
+  }
+}
