@@ -1,0 +1,187 @@
+@header-color: blue;
+
+.hl-header {
+  width: 100%;
+  margin: auto;
+  height: 70px;
+  overflow: hidden;
+  background-color: rgb(0,102,153);
+  .hl-logo {
+    position: relative;
+    padding-left: 20px;
+    width: 25%;
+    float: left;
+    cursor: pointer;
+    img {
+      position: absolute;
+      top:15px;
+      height: 40px;
+      width: 40px;
+    }
+    span {
+      margin-left: 45px;
+      font-size: 26px;
+      font-family: '微软雅黑';
+      font-weight: bolder;
+      color: #ffffff;
+      height: 70px;
+      line-height: 70px;
+      display: block;
+    }
+  }
+
+  .hl-search{
+    float: left;
+    width: 15%;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .infobar {
+    width: 20%;
+    height: 70px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    .hl-message{
+      width: 40%;
+      height: 40px;
+      float: left;
+      line-height: 40px;
+      padding: auto 20px;
+      margin: 15px 5%;
+      div{
+        width: 50%;
+        float: left;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+
+        img{
+          padding: 0px 15px;
+          display: inline-block;
+        }
+        .ant-badge {
+          font-size: 12px;
+          position: absolute;
+          margin-left: -31px;
+          .ant-badge-count {
+            height: 20px;
+            padding: 0px;
+            min-width: 10px;
+          }
+        }
+      }
+      .msg-icon{
+        border-left: 2px solid #c8c9c9;
+        border-right: 2px solid #c8c9c9;
+        .ant-badge {
+          margin-left: -20px;
+        }
+      }
+      .check-icon{
+        border-right: 2px solid #c8c9c9;
+        .ant-badge {
+          margin-left: -20px;
+        }
+      }
+    }
+    .hl-avatar{
+      float: left;
+      //width: 50%;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      .username-box {
+        width: 130px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .banner {
+    background-color: @header-color;
+    height: 96px;
+    line-height: 96px;
+    padding: 0 24px;
+    .banner-title {
+      font-weight: bold;
+      font-size: 22px;
+      color: cornflowerblue;
+    }
+    .banner-search {
+      width: 450px;
+    }
+  }
+}
+
+.hl-navigator {
+  .hl-menu {
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    list-style: none;
+    margin-bottom: 0;
+    &::before {
+      content: "";
+      display: table;
+    }
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .hl-menu-item {
+    font-size: 18px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+    padding: 0 24px;
+  }
+  .hl-menu-item-active {
+    background-color: #0888e8;
+  }
+}
+
+
+.hl-navigator{
+  width: 40%;
+  float: left;
+  height: 70px;
+  color: #333333;
+  font-family: 微软雅黑, serif;
+  font-weight: 500;
+  ul{
+    line-height: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #000000;
+    font-family: '微软雅黑';
+    .ant-menu-item{
+      padding: 0 15px;
+      &:hover{
+        border-bottom: 3px solid #fff;
+        color: #fff;
+      }
+    }
+    .ant-menu-item-selected{
+      border-bottom: 3px solid #fff;
+      color: #fff;
+    }
+    .ant-menu-horizontal > .ant-menu-item:hover{
+      border-bottom: 3px solid #fff;
+      color: #fff;
+    }
+    .ant-menu-horizontal > .ant-menu-item:active{
+      border-bottom: 3px solid #fff;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import (less) "~Styles/theme.less";
+
+.info-bar {
+  padding: 12px 24px;
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .subTitle {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.hl-content-placeholder-box {
+  height: 100%;
+  background-color: #fff;
+  .hl-content-placeholder {
+    height: 100%;
+    background: url("/static/img/placeholder.png") center no-repeat;
+  }
+}
+
+
+.ga-bookmark {
+  margin-top: 18px;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  .bookmark-star {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    font-size: 22px;
+    border-radius: 100%;
+    border: solid 2px #acacac;
+    color: #888;
+    &:hover {
+      border-color: @orange;
+      opacity: 0.8;
+      color: @orange;
+    }
+  }
+  .bookmark-stared {
+    .bookmark-star;
+    border: solid 2px @orange;
+    color: @orange;
+    &:hover {
+      border-color: #acacac;
+      opacity: 0.8;
+      color: #888;
+    }
+  }
+  .bookmark-label {
+    margin-top: 8px;
+  }
+}

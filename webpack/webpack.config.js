@@ -9,7 +9,7 @@ module.exports = {
   mode: 'development', // "production" | "development" | "none"
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    'babel-polyfill',
+    "@babel/polyfill",
     // 'webpack-dev-server/client?http://localhost:9090',
     // 'webpack/hot/only-dev-server',
     config.dev.entry.app,
