@@ -3,6 +3,7 @@ import Loadable from './common/Loadable/Loadable'
 
 /** components */
 import AuthRoute from './common/Route/AuthRoute'
+import HlButton from './common/Button/HlButton'
 
 const Entry = Loadable({
   loader: () =>
@@ -18,4 +19,5 @@ export {
   AuthRoute,
   Entry,
   MainRouter,
+  HlButton,
 }

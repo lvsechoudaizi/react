@@ -20,8 +20,11 @@ moment.locale('zh-cn')
 const renderApp = () => {
   render(
     <Provider store={stores}>
+      {/* 为组件注入store */}
       <LocaleProvider locale={zhCN}>
+        {/* 为组件内建文案提供统一的国际化支持。 */}
         <Router>
+          {/* 说明：使用HTML5历史记录API（pushState，replaceState和popstate事件）的<Router>来保持UI与URL的同步 */}
           <AsyncApp />
         </Router>
       </LocaleProvider>

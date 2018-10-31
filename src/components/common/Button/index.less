@@ -1,0 +1,132 @@
+@import (less) '../../../styles/theme.less';
+
+//@lighter-color: lighten(@theme-color, 15%);
+.hl-buttongroup {
+  //text-align: center;
+  .hl-buttongroup-button:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.hl-button-base {
+  border-radius: 2px;
+}
+
+.hl-button-default(@color) {
+  @lighter-color: lighten(@color, 15%);
+
+  background: @color;
+  border: @color solid 1px;
+  border-radius: 2px;
+  color: #fff;
+  &:hover {
+    background: @lighter-color;
+    border: @lighter-color solid 1px;
+    color: #fff;
+  }
+  &:focus {
+    background: @lighter-color;
+    border: @lighter-color solid 1px;
+    color: #fff;
+  }
+}
+
+.hl-button-hollowOut(@color) {
+  @lighter-color: lighten(@color, 10%);
+
+  color: @color;
+  border: @color solid 1px;
+  border-radius: 2px;
+  background: #fff;
+  &:hover {
+    color: @lighter-color;
+    border: @lighter-color solid 1px;
+  }
+  &:focus {
+    color: @lighter-color;
+    border: @lighter-color solid 1px;
+  }
+}
+
+.hl-button-ghost(@color) {
+  @lighter-color: lighten(@color, 10%);
+
+  color: @color;
+  border: @color solid 1px;
+  border-radius: 2px;
+  background: transparent;
+  &:hover {
+    color: @lighter-color;
+    border: @lighter-color solid 1px;
+    background: transparent;
+  }
+  &:focus {
+    color: @lighter-color;
+    border: @lighter-color solid 1px;
+    background: transparent;
+  }
+}
+
+.hl-button-blue {
+  .hl-button-default(@blue)
+}
+
+.hl-button-o-blue {
+  .hl-button-hollowOut(@blue)
+}
+
+.hl-button-green {
+  .hl-button-default(@dim-green)
+}
+
+.hl-button-o-green {
+  .hl-button-hollowOut(@dim-green)
+}
+
+.hl-button-orange {
+  .hl-button-default(@orange)
+}
+
+.hl-button-o-orange {
+  .hl-button-hollowOut(@orange)
+}
+
+.hl-button-red {
+  .hl-button-default(@dim-red)
+}
+
+.hl-button-o-red {
+  .hl-button-hollowOut(@dim-red)
+}
+
+.hl-button-yellow {
+  .hl-button-default(@yellow)
+}
+
+.hl-button-o-yellow {
+  .hl-button-hollowOut(@yellow)
+}
+
+.hl-button-black {
+  .hl-button-default(@black)
+}
+
+.hl-button-o-black {
+  .hl-button-hollowOut(@black)
+}
+
+.hl-button-purple {
+  .hl-button-default(@purple)
+}
+
+.hl-button-o-purple {
+  .hl-button-hollowOut(@purple)
+}
+
+.hl-button-gray {
+  .hl-button-default(@gray)
+}
+
+.hl-button-o-gray {
+  .hl-button-hollowOut(@gray)
+}
